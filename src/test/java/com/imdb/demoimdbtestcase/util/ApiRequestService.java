@@ -6,7 +6,23 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class ApiRequestService {
-    public static int sendRequestToElementLinks(String url){
+
+
+    private static ApiRequestService apiRequestService;
+    private ApiRequestService(){
+
+    }
+    public static ApiRequestService getInstance(){
+
+        if (apiRequestService == null){
+            apiRequestService = new ApiRequestService();
+        }
+
+        return apiRequestService;
+    }
+
+
+    public int sendRequestToElementLinks(String url){
         HttpURLConnection connection = null;
         int responseCode;
 

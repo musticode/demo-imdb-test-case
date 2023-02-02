@@ -1,13 +1,11 @@
 package com.imdb.demoimdbtestcase.page.imdb.circus;
 
 import com.imdb.demoimdbtestcase.page.BasePage;
-import com.imdb.demoimdbtestcase.util.ApiRequestService;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
-import java.util.Iterator;
 
 public class TheCircusFilmDetailsPage extends BasePage {
     @FindBy(xpath = "//button[text()='Director']//following-sibling::div//child::a")

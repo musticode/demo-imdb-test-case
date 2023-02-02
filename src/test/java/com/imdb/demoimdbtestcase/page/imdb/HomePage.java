@@ -4,27 +4,10 @@ import com.imdb.demoimdbtestcase.page.BasePage;
 import com.imdb.demoimdbtestcase.page.imdb.component.Header;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+
 
 public class HomePage extends BasePage {
     private static String IMDB_MAIN_PAGE_URL = "https://www.imdb.com/";
-//    @FindBy(id = "imdbHeader-navDrawerOpen")
-//    private WebElement menuButtonElement;
-//
-//    @FindBy (xpath = "//a[@role='menuitem'][contains(.,'Oscars')]")
-//    private WebElement oscarsElement;
-//
-//    @FindBy (id = "home_img")
-//    private WebElement imdbHomeButtonElement;
-//
-//    @FindBy (id = "react-autowhatever-1--item-0")
-//    private WebElement searchSuggestionFirstElement;
-
-
-
-
-
 
 
     private Header header;

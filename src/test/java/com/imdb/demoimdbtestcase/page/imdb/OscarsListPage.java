@@ -12,7 +12,6 @@ public class OscarsListPage extends BasePage {
     private WebElement evenHistory1929Element;
 
 
-
     public OscarsListPage(WebDriver driver) {
         super(driver);
     }

@@ -36,7 +36,7 @@ public class CircusPhotoGalleryPage extends BasePage {
                 continue;
             }
 
-            int responseCode = ApiRequestService.sendRequestToElementLinks(photoLink);
+            int responseCode = ApiRequestService.getInstance().sendRequestToElementLinks(photoLink);
 
             Assert.assertEquals(responseCode, 200,"Broken");
 
