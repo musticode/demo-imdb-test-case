@@ -7,6 +7,7 @@ import com.imdb.demoimdbtestcase.page.imdb.circus.TheCircusFilmDetailsPage;
 import com.imdb.demoimdbtestcase.page.imdb.jazzsinger.JazzSingerPhotoGalleryPage;
 import com.imdb.demoimdbtestcase.page.imdb.jazzsinger.TheJazzSingerFilmDetailsPage;
 import com.imdb.demoimdbtestcase.test.BaseTest;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -26,7 +27,8 @@ public class ImdbFilmTest extends BaseTest {
 
 
     @Test(priority = 0)
-    public void menuAndSearchMatchingTest_TheCircus() throws InterruptedException {
+    @Description("Check film details and find broken links The Circus")
+    public void checkDetailsAndBrokenLinksTheCircusTest() throws InterruptedException {
 
         homePage = new HomePage(driver);
         oscarsListPage = new OscarsListPage(driver);
@@ -97,7 +99,8 @@ public class ImdbFilmTest extends BaseTest {
     }
 
     @Test(priority = 1)
-    public void menuAndSearchMatchingTest_TheJazzSinger() throws InterruptedException {
+    @Description("Check film details and find broken links The JazzSinger")
+    public void checkDetailsAndBrokenLinksTheJazzSingerTest() throws InterruptedException {
 
         homePage = new HomePage(driver);
         oscarsListPage = new OscarsListPage(driver);

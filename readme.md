@@ -8,4 +8,3 @@ mvn clean test
 ```
 mvn allure:serve
 ```
-![img.png](img.png)
